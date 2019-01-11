@@ -40,6 +40,10 @@ The ideal auto-completion needs:
 
 **TODO**
 
+## Code exploration widgets (quick hover, peek definition, open documentation, etc)
+
+**TODO**
+
 ## Other widgets (file explorer, color picker, etc)
 
 **TODO**
