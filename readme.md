@@ -8,6 +8,17 @@ or by forking neovim.
 
 The end goal is to turn neovim into a modern IDE (like VSCode).
 
+### Table of contents
+
+ - [Auto-completion](#auto-completion)
+ - [Search & replace](#search--replace)
+ - [Git integration](#git-integration)
+ - [Project management](#project-management)
+ - [Fuzzy finder (for files & other)](#fuzzy-finder-for-files--other)
+ - [Code exploration widgets (quick hover, peek definition, open documentation, etc)](#code-exploration-widgets-quick-hover-peek-definition-open-documentation-etc)
+ - [Other widgets (file explorer, color picker, etc)](#other-widgets-file-explorer-color-picker-etc)
+ - [Debbugging](#debbugging)
+
 
 ## Auto-completion
 
