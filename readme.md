@@ -11,9 +11,9 @@ Neovim current auto-completion is by default bad (or very bad (or very very bad)
 To remediate this, we currently have various auto-completion plugins that compete
 to provide a better experience.
 
-  - (YouCompleteMe)[https://github.com/Valloric/YouCompleteMe]
-  - (deoplete)[https://github.com/Shougo/deoplete.nvim]
-  - (coc.nvim)[https://github.com/neoclide/coc.nvim]
+  - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+  - [deoplete](https://github.com/Shougo/deoplete.nvim)
+  - [coc.nvim](https://github.com/neoclide/coc.nvim)
 
 Both deoplete and coc.nvim allow other plugins to provide auto-completion sources.
 It would be better if there was a consistent interface so the work is not repeated.
