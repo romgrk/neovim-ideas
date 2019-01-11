@@ -40,6 +40,23 @@ The ideal auto-completion needs:
 
 **TODO**
 
+## Fuzzy finder (for files & other)
+
+Current options:
+ - CtrlP
+ - fzf.vim
+
+CtrlP has a nice feeling but is slow when searching large directories.
+fzf.vim is fast with large directories but it has to start a process in a terminal,
+so there is an unavoidable delay.
+Both plugins have the issue that they mess the window layout, which doesn't feel nice.
+They are also constrained by the window layout constraints.
+
+Ideal solution:
+ - Opens instantly
+ - Supports asynchronous searching (e.g. for files), doesn't freeze like CtrlP
+ - Exposes a consistent and feature-rich interface to be usable by any plugin.
+
 ## Code exploration widgets (quick hover, peek definition, open documentation, etc)
 
 **TODO**
