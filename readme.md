@@ -2,7 +2,11 @@
 # Neovim ideas
 
 This is a summary of my current issues with neovim and what would be the behavior of
-the ideal solution
+the ideal solution. From this ideal solution description, I shall then work towards
+the best way to achieve it, either by contributing to core neovim or by a plugin
+or by forking neovim.
+
+The end goal is to turn neovim into a modern IDE (like VSCode).
 
 
 ## Auto-completion
@@ -37,5 +41,9 @@ The ideal auto-completion needs:
 **TODO**
 
 ## Other widgets (file explorer, color picker, etc)
+
+**TODO**
+
+## Debbugging
 
 **TODO**
