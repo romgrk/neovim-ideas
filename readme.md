@@ -31,6 +31,7 @@ to provide a better experience.
   - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
   - [deoplete](https://github.com/Shougo/deoplete.nvim)
   - [coc.nvim](https://github.com/neoclide/coc.nvim)
+  - [ncm2](https://github.com/ncm2/ncm2)
 
 Both deoplete and coc.nvim allow other plugins to provide auto-completion sources.
 It would be better if there was a consistent interface so the work is not repeated.
