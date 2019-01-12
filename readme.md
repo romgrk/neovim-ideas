@@ -14,6 +14,8 @@ The end goal is to turn neovim into a modern IDE (like VSCode).
  - [Search & replace](#search--replace)
  - [Git integration](#git-integration)
  - [Project management](#project-management)
+ - [Task runner](#task-runner)
+ - [Ctags](#ctags)
  - [Fuzzy finder (for files & other)](#fuzzy-finder-for-files--other)
  - [Code exploration widgets (quick hover, peek definition, open documentation, etc)](#code-exploration-widgets-quick-hover-peek-definition-open-documentation-etc)
  - [Other widgets (file explorer, color picker, etc)](#other-widgets-file-explorer-color-picker-etc)
@@ -38,10 +40,16 @@ The ideal auto-completion needs:
    open as you type (YCM gets this behavior right). Keybinding triggered AC is archaic.
  - Intelligent suggestions: each file can get it's own sources, listed by relevance.
      Primary source would be coming from the LanguageServerProtocol client in use.
+ - Inline reference to the documentation of a function (Eclipse like)
+ - Arguments hinting after auto-completing a function
 
 ## Search & replace
 
-**TODO**
+These are the use-cases that need to be covered:
+ - Search for a pattern in the current project files
+ - Replace that pattern
+ - Options: plain, regex, case-sensitive
+ - Quickly specify pattern of files to match
 
 ## Git integration
 
@@ -51,26 +59,42 @@ The ideal auto-completion needs:
 
 **TODO**
 
+## Task runner
+
+Current task running plugins usually suffer from a lack of visual interface.
+
+## Ctags
+
+Haven't found a decent ctags plugin yet.
+Requirements:
+ - It works
+ - Can be customized by project (file patterns to match/ or exclude)
+
 ## Fuzzy finder (for files & other)
 
 Current options:
  - CtrlP
  - fzf.vim
+ - Denite
 
 CtrlP has a nice feeling but is slow when searching large directories.
 fzf.vim is fast with large directories but it has to start a process in a terminal,
 so there is an unavoidable delay.
-Both plugins have the issue that they mess the window layout, which doesn't feel nice.
-They are also constrained by the window layout constraints.
+Both plugins have the issue that they mess the window layout, which doesn't
+feel nice (screen flickers).
 
 Ideal solution:
  - Opens instantly
  - Supports asynchronous searching (e.g. for files), doesn't freeze like CtrlP
  - Exposes a consistent and feature-rich interface to be usable by any plugin.
+ - Smart matching algorithm. Default one should be made for filename matching
+   (fzy algorithm seems decent)
+
+Other use-cases: jump to symbols
 
 ## Code exploration widgets (quick hover, peek definition, open documentation, etc)
 
-**TODO**
+Quick hover: should be provided by the editor to any plugin that can handle it.
 
 ## Other widgets (file explorer, color picker, etc)
 
